@@ -1,0 +1,10 @@
+.radial-gradient {
+    position: absolute;
+    top: -25rem;
+    left: -18rem;
+    background: radial-gradient(rgba($color-secondary, 0.4), rgba($color-blue-dark, 0.8));
+    height: 60rem;
+    width: 60rem;
+    border-radius: 50%;
+    padding: 10rem;
+}

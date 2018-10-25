@@ -1,6 +1,7 @@
 .btn {
     border-radius: 5rem;
     transition: all 0.3s;
+    backface-visibility: hidden;
 
     &:hover {
         transform: translateY(-3px);
@@ -43,6 +44,8 @@
     }
 
     &--animated {
+        position: relative;
+        
         &:before {
             content: "";
             height: 100%;
@@ -55,6 +58,7 @@
             background: linear-gradient(120deg, transparent 0%, transparent 80%, $color-white 80%, transparent 90%, $color-white 90%, transparent 100%);
             background-size: 250%;
             transition: all 1s ease;
+            backface-visibility: hidden;
         }
 
         &:hover {

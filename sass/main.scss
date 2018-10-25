@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,500,600');
+
+@import "./variables";
+@import "./mixins";
+@import "./animations";
+@import "./typeography";
+@import "./utilities";
+
+@import "./components/button";
+@import "./components/about-box";
+@import "./components/radial-gradient";
+@import "./components/card";
+@import "./components/form";
+
+@import "./layout/home";
+@import "./layout/grid";
+@import "./pages/home";
+
 *,
 *::before,
 *::after {
@@ -13,17 +30,6 @@ html {
 
 body {
     font-size: 62.5%;
+    padding: 3rem;
+    box-shadow: 0 1rem 4rem rgba($color-black, 0.4);
 }
-
-@import "./variables";
-@import "./mixins";
-@import "./animations";
-@import "./typeography";
-@import "./utilities";
-
-@import "./components/button";
-@import "./components/about-box";
-
-@import "./layout/home";
-@import "./layout/grid";
-@import "./pages/home";

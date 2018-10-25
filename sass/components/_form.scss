@@ -1,0 +1,35 @@
+.contact-form {
+    transform: skewX(-10deg);
+    width: 50%;
+    padding-left: 5rem;
+    
+
+    &__group {
+        margin-bottom: 2rem;
+        margin-left: auto;
+    }
+
+    &__input {
+        width: 90%;
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 3px;
+        background-color: rgba($color-white, 0.9);
+        display: block;
+        border: none;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+            border-bottom: 3px solid $color-secondary;
+        }
+
+        &--textarea {
+            resize: none;
+
+            &:focus {
+                border: 3px solid $color-secondary;
+            }
+        }
+    }
+}

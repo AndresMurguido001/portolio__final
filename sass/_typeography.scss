@@ -47,34 +47,30 @@ body {
         text-align: center;
     }
 }
-
+//Add animation from natours project navigation list item.
 .heading-secondary {
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 1.5rem 0;
+    padding: 0rem 15rem 0 4rem;
+    margin: 1rem 0;
+    color: $color-blue-dark;
     position: relative;
+    z-index: 3;
     display: inline-block;
-    transform: scale(1);
-    transition: all 0.4s;
+    background: linear-gradient(120deg, $color-white 0%, $color-white 50%, transparent 50%);
+    background-size: 220%;
+    transition: all 0.8s ease;
+    background-position: 100%;
+    
+        &:hover {
+            color: $color-black;
+            background-position: 0%;
+            
+        }
 
-    &::before, &::after {
-        content: "";
-        background-color: $color-grey-dark;
-        height: 3px;
-        width: 5rem;
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-    }
-    &::before {
-        left: -15%;
-    }
 
-    &::after {
-        right: -15%;
-    }
-
+  
     &--dark {
         color: $color-grey-dark;
     }
@@ -82,10 +78,11 @@ body {
         color: $color-grey-light;
     }
 
-    &:hover {
-        transform: scale(1.05);
-        letter-spacing: 0.3rem;
+    &--white {
+        color: $color-white;
     }
+
+  
 }
 
 .heading-tertiary {
@@ -110,7 +107,13 @@ body {
 
 .paragraph {
     font-size: 1.2rem;
+    font-weight: 400;
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
+    
+    &--light {
+        color: $color-white;
+    }
+
 }
