@@ -2,6 +2,14 @@
     border-radius: 5rem;
     transition: all 0.3s;
     backface-visibility: hidden;
+    height: 6rem;
+    width: 25rem;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    color: $color-secondary;
+    background-color: $color-grey-light;
 
     &:hover {
         transform: translateY(-3px);
@@ -16,9 +24,9 @@
         font-weight: 400;
         display: inline-block;
         cursor: pointer;
-        padding: 1rem 2rem;
+        padding: 1.5rem 4rem;
         border: none;
-        margin: 3rem auto;
+        margin: 5rem auto;
         position: relative;
     }
 
@@ -30,16 +38,16 @@
 
     &--white {
         color: $color-white;
-        box-shadow: 0 .5rem 1rem rgba($color-white, 0.2);
+        box-shadow: 0 1.5rem 2rem rgba($color-white, 0.2);
         background-color: rgba($color-grey-dark, 0.8);
 
         &:hover {
-            box-shadow: 0 1.1rem 1.2rem rgba($color-white, 0.2);
+            box-shadow: 0 2rem 3rem rgba($color-white, 0.2);
         }
 
         &:active,
         &:focus {
-            box-shadow: 0 0.5rem 0.7rem rgba($color-white, 0.2);            
+            box-shadow: 0 1rem 1.5rem rgba($color-white, 0.2);            
         }
     }
 
@@ -67,6 +75,11 @@
                 background-position: 200%;
             }
         }
+    }
+
+    &__text {
+        display: inline-block;
+        margin-top: 1.2rem;
     }
 
 }

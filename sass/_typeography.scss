@@ -12,10 +12,10 @@ body {
     
     &--main {
         display: block;
-        font-size: 4rem;
+        font-size: 6rem;
         font-weight: 300;
         text-align: center;
-        letter-spacing: 2.5rem;
+        letter-spacing: 3rem;
         
         &::after {
             content: "";
@@ -41,18 +41,18 @@ body {
 
     &--sub {
         display: block;
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: 400;
-        letter-spacing: 1.75rem;
+        letter-spacing: 2rem;
         text-align: center;
     }
 }
 //Add animation from natours project navigation list item.
 .heading-secondary {
-    font-size: 3.5rem;
+    font-size: 5rem;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 0rem 15rem 0 4rem;
+    padding: 0rem 25rem 0 5rem;
     margin: 1rem 0;
     color: $color-blue-dark;
     position: relative;
@@ -86,7 +86,7 @@ body {
 }
 
 .heading-tertiary {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-transform: capitalize;
     font-weight: 100;
     color: $color-blue-light;
@@ -100,13 +100,13 @@ body {
 
     &--animated {
         &:hover {
-            letter-spacing: 0.5rem;
+            letter-spacing: 1rem;
         }
     }
 }
 
 .paragraph {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     &:not(:last-child) {
         margin-bottom: 3rem;
