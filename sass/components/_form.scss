@@ -1,7 +1,8 @@
 .contact-form {
     transform: skewX(-10deg);
-    width: 50%;
-    padding-left: 5rem;
+    width: 100%;
+    padding: 0 4rem;
+    float: left;
     
 
     &__group {
@@ -59,52 +60,82 @@
             transform: translateY(-4rem);
         }
 
-        &__radio-group {
-            display: inline-block;
-            font-size: 1.2rem;
-            color: $color-black;
-            width: 49%;
-        }
+        
+    }
+    .social {
+        display: block;
+        width: 50%;
+        height: 2.5rem;
+        transform: skewX(-10deg);
+        position: absolute;
+        right: 0;
+        bottom: 0;
 
-        &__radio-label {
+        &__list {
+           display: flex;
+           justify-content: space-evenly;
+           list-style: none;
             position: relative;
-            cursor: pointer;
-            padding-left: 4rem;
-            font-weight: 400;
         }
+        &__list-item {
+            margin-top: -5rem;
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s;
 
-        &__radio-button {
-            height: 3rem;
-            border-radius: 50%;
-            background-color: $color-secondary;
-            width: 3rem;
-            border: 3px solid $color-primary;
-            display: inline-block;
-            position: absolute;
-            left: 0;
-            top: -0.4rem;
+           &--icon {
 
-            &::after {
-                content: "";
-                height: 1.5rem;
-                width: 1.5rem;
-                border-radius: 50%;
-                display: block;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background-color: $color-primary;
-                opacity: 0;
-                transition: opacity 0.3s;
+               &-path {
+                  fill: $color-white;
+               }
+
+               &-wrap {
+                   width: 5rem;
+                   height: 8rem;
+                   position: relative;
+                   z-index: 3;
+                   -webkit-filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
+                   -moz-filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
+                   -o-filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
+                   -ms-filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
+                    filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
+                }
             }
-        }
 
-        &__radio-input {
-            display: none;
         }
+}
 
-        &__radio-input:checked ~ &__radio-label &__radio-button:after {
-            opacity: 1;
+.portrait {
+    width: 100%;
+    float: right;
+    transform: skewX(-35deg);
+    position: relative;
+    overflow: hidden;
+    // height: 25rem;
+    text-align: center;
+
+    & > img {
+        width: 50%;
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 0.5rem;
+        transform: skewX(26deg);
+    }
+
+    .contact{
+
+        &__list {
+            width: 100%;
+            text-align: center;
+            transform: skewX(30deg);
+            list-style: none;
+
         }
+        &__list-item {
+            color: #f0f0f0;
+            font-size: 1.3rem;
+            font-weight: 400;
+            
+        }
+    }
 }

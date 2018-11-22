@@ -103,6 +103,31 @@ body {
             letter-spacing: 1rem;
         }
     }
+
+    &--seperator {
+        text-transform: uppercase;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 35rem;
+            height: 3px;
+            background-color: $color-blue-light;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+        }
+
+        &::after {
+            content: "";
+            width: 35rem;
+            height: 3px;
+            background-color: $color-blue-light;
+            position: absolute;
+            top: 50%;
+            right: 20%;
+        }
+    }
 }
 
 .paragraph {

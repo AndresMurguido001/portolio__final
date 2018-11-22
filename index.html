@@ -6,15 +6,39 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Andres Murguido | Developer Portfolio</title>
+        <title>
+            Andres Murguido | Developer Portfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        
+        <link rel="shortcut icon" href="images/favicon.ico" /><link>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navigation-toggle">
+            <label for="navigation-toggle" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+
+            <!-- <div class="navigation__background">
+                &nbsp;
+            </div> -->
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+                    <li class="navigation__item"><a href="#work" class="navigation__link">Work</a></li>
+                    <li class="navigation__item"><a href="#contact" class="navigation__link">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
         <header class="header">
             <div class="header__text-box">
                 <h1 class="heading-primary">
@@ -22,13 +46,13 @@
                     <span class="heading-primary--sub">FullStack Web Developer</span>
                 </h1>
 
-                <a href="#" class="btn btn--white btn--animated">Discover more &rarr;</a>
+                <a href="#work" class="btn btn--white btn--animated">Discover more &rarr;</a>
             </div> 
         
         </header>
         
         <main>
-            <section class="section-about">
+            <section class="section-about" id="about">
                 
                 
                     <div class="u-margin-bottom-medium">
@@ -63,7 +87,7 @@
                                 <img src="./images/Imac__about-box--1.png" alt="Imac" srcset="">
                             </div>
                                 <h2 class="heading-tertiary">
-                                    Web
+                                    Front-End
                                 </h2>
                             </div>
                        <div class="about-box__content about-box__content--1">
@@ -78,10 +102,7 @@
                            <div class="about-box__footer-item about-box__footer-item--2">
                               <img src="./images/node_js_icon.png" alt="" srcset=""> 
                             </div>
-                           <div class="about-box__footer-item about-box__footer-item--3">
-                               <span></span>
-                            <img src="./images/express__icon-min.png" alt="Express Icon" srcset="">
-                        </div>
+                           
                        </div>
                     </div>
 
@@ -89,10 +110,10 @@
                      <div class="about-box about-box--2">
                         <div class="about-box__header">
                             <div class="about-box__image about-box__image--2">
-                                <img src="./images/card__image-2.png" alt="Imac" srcset="">
+                                <img src="./images/backend.png" alt="Imac" srcset="">
                             </div>
                                 <h2 class="heading-tertiary">
-                                    Design
+                                    Back-End
                                 </h2>
                             </div>
                        <div class="about-box__content about-box__content--2">
@@ -100,16 +121,15 @@
                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta voluptate praesentium repellat, vero et.
                            </p>
                        </div>
+                            
                        <div class="about-box__footer about-box__footer--2">
-                           <div class="about-box__footer-item about-box__footer-item--4">
-                                   <img src="./images/Photoshop_icon.png" alt="" srcset="">
-                            </div>
-                           <!-- <div class="about-box__footer-item about-box__footer-item--2">
-                              <img src="./images/illustrator_icon.png" alt="" srcset=""> 
-                            </div> -->
-                           <div class="about-box__footer-item about-box__footer-item--5">
+                           <div class="about-box__footer-item about-box__footer-item--3">
                                <span></span>
-                            <img src="./images/illustrator_icon.png" alt="Express Icon" srcset="">
+                            <img src="./images/express__icon-min.png" alt="Express Icon" srcset="">
+                        </div>
+                           <div class="about-box__footer-item about-box__footer-item--4">
+                               <span></span>
+                            <img src="./images/graphql.png" alt="graphql Icon" srcset="">
                         </div>
                        </div>
                    </div>
@@ -141,13 +161,13 @@
                 </div>
                 <div class="row u-center-text">
                     <h2 class="heading-tertiary heading-tertiary--bold heading-tertiary--animated u-margin-bottom-medium">
-                     Rails &bull; Jquery &bull; Apollo &bull; Graphql &bull; Redux 
+                     Rails &bull; SQL &bull; AWS &bull; Apollo &bull; Redux 
                  </h2>
                 </div>
 
             </section>
 
-            <section class="section-work">
+            <section class="section-work" id="work">
 
               <div class="u-margin-bottom-medium">
                     <h2 class="heading-secondary heading-secondary--light">
@@ -156,98 +176,98 @@
                 </div>
 
    
+               
+
+            
                 <div class="row">
 
-                    <div class="work">
-
-                        <div class="col-1-of-3">
-                                       <div class="card">
-                                               <div class="card__side card__side--front">
-                                                   <h4 class="card__heading">
-                                                       <span class="card__heading-span card__heading-span--1">
-                                                           The Sea Explorer
-                                                       </span>
-                                                   </h4>
-                                                   <div class="card__picture card__picture--1">
-                                                       &nbsp;
-                                                   </div>
-                                                   
+                <div class="col-2-of-4">
+                                   <div class="card card--faded">
+                                           <div class="card__side card__side--front">
+                                            <div class="overlay">
+                                                <div class="desc-container desc-container--1">
+                                                    <p class="desc desc--faded">
+                                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam inventore veritatis illum delectus quibusdam sed aliquid corrupti itaque dolorem nemo?
+                                                    </p>
+                                                </div>
+                                            </div>  
+                                               <div class="card__picture card__picture--1">
+                                                   <img src="./images/project_images/SneakerHeadShop.png" alt="" srcset="">
                                                </div>
-                                               <div class="card__side card__side--back card__side--back-1">
-                                                      <div class="card__details">
-                                                       <ul>
-                                                           <li>5 day tour</li>
-                                                           <li>Up to 15 people</li>
-                                                           <li>3 tour guides</li>
-                                                           <li>Sleep in provided tents</li>
-                                                           <li>Difficulty: hard</li>
-                                                       </ul>
-                                                   </div>
-                                               </div>
+                                               
                                            </div>
-                               </div>
-
-                               <div class="col-1-of-3">
-                                       <div class="card">
-                                               <div class="card__side card__side--front">
-                                                   <h4 class="card__heading">
-                                                       <span class="card__heading-span card__heading-span--2">
-                                                           The Sea Explorer
-                                                       </span>
-                                                   </h4>
+                                          
+                                       </div>
+                           </div>
+                               <div class="col-1-of-4">
+                                       <div class="card card--faded">
+                                            <div class="card__side card__side--front">
+                                                <div class="overlay">
+                                                <div class="desc-container desc-container--1">
+                                                    <p class="desc desc--faded">
+                                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam inventore veritatis illum delectus quibusdam sed aliquid corrupti itaque dolorem nemo?
+                                                    </p>
+                                                </div>
+                                            </div>  
                                                    <div class="card__picture card__picture--2">
-                                                       &nbsp;
+                                                      <img src="./images/project_images/twitter_feeds.png" alt="" srcset=""> 
                                                    </div>
                                                    
                                                </div>
-                                               <div class="card__side card__side--back card__side--back-2">
-                                                      <div class="card__details">
-                                                       <ul>
-                                                           <li>5 day tour</li>
-                                                           <li>Up to 15 people</li>
-                                                           <li>3 tour guides</li>
-                                                           <li>Sleep in provided tents</li>
-                                                           <li>Difficulty: hard</li>
-                                                       </ul>
-                                                   </div>
-                                               </div>
+                                            
                                            </div>
                                </div>
 
-                               <div class="col-1-of-3">
-                                       <div class="card">
+                               <div class="col-1-of-4">
+                                       <div class="card card--faded">
+
+                                            <div class="overlay">
+                                                <div class="desc-container desc-container--1">
+                                                    <p class="desc desc--faded">
+                                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam inventore veritatis illum delectus quibusdam sed aliquid corrupti itaque dolorem nemo?
+                                                    </p>
+                                                </div>
+                                            </div>
+
                                                <div class="card__side card__side--front">
-                                                   <h4 class="card__heading">
-                                                       <span class="card__heading-span card__heading-span--3">
-                                                           The Sea Explorer
-                                                       </span>
-                                                   </h4>
                                                    <div class="card__picture card__picture--3">
-                                                       &nbsp;
+                                                       <img src="./images/project_images/movie.png" alt="" srcset="">
                                                    </div>
                                                    
                                                </div>
-                                               <div class="card__side card__side--back card__side--back-3">
-                                                      <div class="card__details">
-                                                       <ul>
-                                                           <li>5 day tour</li>
-                                                           <li>Up to 15 people</li>
-                                                           <li>3 tour guides</li>
-                                                           <li>Sleep in provided tents</li>
-                                                           <li>Difficulty: hard</li>
-                                                       </ul>
-                                                   </div>
-                                               </div>
+                                             
                                            </div>
                                </div>
-
-
-
+                    </div>
+                
+                <div class="continued-work">
+                    <div class="row">
+                    <div class="intro intro--about">
+                        <div class="col-1-of-2">
+                            <div class="intro__header">
+                                <h2 class="heading-tertiary heading-tertiary--bold">Other Projects</h2>
+                            </div>
+                        </div>
+                        <div class="col-1-of-2">
+                            <div class="intro__content">
+                                <p class="paragraph paragraph--light">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ut. Quam sint impedit corrupti? Aliquam magni quibusdam similique harum itaque!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section-contact">
+            <section class="section-contact" id="contact">
+
+                <div class="bg-video">
+                            <video class="bg-video__content" autoplay muted loop>
+                                <source src="./images/video.mp4" type="video/mp4">
+                                    Browser does not support video
+                            </video>
+                        </div>
 
                 <div class="u-margin-bottom-medium">
                     <h2 class="heading-secondary heading-secondary--white">
@@ -257,59 +277,71 @@
 
                 <div class="row">
 
+                    
                     <div class="contact">
-                          
-                                <div class="contact-form">
+
+                                <form class="contact-form" id="contact-me" action="https://formspree.io/dre.murguido@gmail.com" method="POST">
                                     <div class="u-margin-bottom-medium">
-                                        <h2 class="heading-tertiary heading-tertiary--bold">Send me an email</h2>
+                                        <h2 class="heading-tertiary heading-tertiary--bold">How can I help you?</h2>
                                     </div>
                                         <div class="contact-form__group">
-                                            <input type="email" id="email" name="email" placeholder="Email" required class="contact-form__input">
+                                            <input type="email" id="email" name="email" required placeholder="Email" class="contact-form__input">
                                             <label for="email" class="contact-form__label">Email</label>
-                                            
                                         </div>
 
                                         <div class="contact-form__group">
-                                            <textarea name="message" id="message" cols="30" rows="5" placeholder="How can I help you?" required class="contact-form__input contact-form__input--textarea">
-                                            </textarea>
+                                            <textarea name="message" id="message-text" cols="30" rows="5" placeholder="How can I help you?" required class="contact-form__input contact-form__input--textarea"></textarea>
                                             <label for="message">Message</label>
                                         </div>
 
                                         <div class="contact-form__group">
-
-                                            <div class="contact-form__radio-group">
-                                                <input type="radio" name="method" id="send-email" class="contact-form__radio-input">
-                                                <label for="send-email" class="contact-form__radio-label">
-                                                    <span class="contact-form__radio-button">
-
-                                                    </span>
-                                                    Send Email
-                                                </label>
-                                            </div>
-
-                                            <div class="contact-form__radio-group">
-                                                <input type="radio" name="method" id="send-text" class="contact-form__radio-input">
-                                                <label for="send-text" class="contact-form__radio-label">
-                                                    <span class="contact-form__radio-button">
-
-                                                    </span>
-                                                    Send Text
-                                                </label>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="contact-form__group">
                                             
-                                                <a class="btn btn--animated">
+                                               
+                                                    <button type="submit" class="btn btn--animated">
                                                     <span class="btn__text">
                                                         Submit &rarr;
                                                     </span>
-                                                </a>
-                                           
+                                                    </button>
+                                               
                                         </div>
-                                </div>   
-                         
+                                    </form>  
+
+                                    <div class="portrait">
+                                        <img src="./images/portfolio_portrait.png" alt="My Picture" srcset="">
+                                        <ul class="contact__list">
+                                            <li class="contact__list-item">Andres Murguido, Brickell - Miami, FL</li>
+                                            <li class="contact__list-item">Email: Dre.murguido@gmail.com</li>
+                                            <li class="contact__list-item">Phone: (786)942-1330</li>
+                                        </ul>
+                                    </div>
+
+                                
+                                <div class="social">
+                                    <ul class="social__list">
+                                            <li class="social__list-item social__list-item--1">
+                                                <a href="https://github.com/AndresMurguido001">
+                                               <svg class="social__list-item--icon-wrap">
+                                                   <use class="social__list-item--icon-path" href="./images/sprite.svg#icon-github"></use>
+                                               </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social__list-item social__list-item--2">
+                                            <a href="https://www.linkedin.com/in/andres-murguido/">
+                                            <svg class="social__list-item--icon-wrap">
+                                                   <use class="social__list-item--icon-path" href="./images/sprite.svg#icon-linkedin"></use>
+                                               </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social__list-item social__list-item--3">
+                                            <a href="https://twitter.com/dre_murguido">
+                                            <svg class="social__list-item--icon-wrap">
+                                                   <use class="social__list-item--icon-path" href="./images/sprite.svg#icon-twitter"></use>
+                                               </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                         </div>
                 </div>
             

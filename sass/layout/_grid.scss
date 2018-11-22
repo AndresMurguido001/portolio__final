@@ -12,6 +12,9 @@
     &--center {
         justify-content: flex-end;
     }
+    &--space-between {
+        justify-content: space-between;
+    }
     // @include respond(tab-port) {
     //     max-width: 50rem;
     //     padding: 0 3rem;

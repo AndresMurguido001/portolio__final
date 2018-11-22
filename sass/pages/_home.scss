@@ -9,10 +9,11 @@
 
 
 .intro {
-    background-color: rgba($color-black, 0.2);
+    background-color: rgba($color-black, 0.5);
     padding: 2.5rem;
-    margin: 0 auto;
+    margin: 0 auto 3rem auto; 
     position: relative;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.8);
 
     &__header {
         position: relative;
@@ -24,6 +25,7 @@
     background-color: rgba($color-black, 0.2);
     min-height: 100%;
     min-width: 80%;
+    // margin: 5rem;
     padding: 2rem;
     margin: auto;
     transform: skewX(-10deg);
@@ -39,4 +41,151 @@
     transform: skewX(10deg);
     box-shadow: 0 2rem 6rem rgba($color-black, 0.2);
     background-image: linear-gradient(125deg, rgba($color-grey-dark, 0.5) 0%, rgba($color-grey-dark, 0.5) 50%, transparent 50%, transparent 100%);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        background-color: $color-white;
+        height: 7rem;
+        width: 7rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 200;
+        box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+        text-align: center;
+        cursor: pointer;
+    }
+
+
+    &__nav {
+        height: 0rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 150;
+        transform: translateY(-50rem);
+        width: 35rem;
+        opacity: 1;
+        transition: all 0.8s cubic-bezier(1.000, -0.405, 0.265, 1.615);
+    }
+
+    &__list {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+        width: 35rem;
+    }
+
+    &__item {
+        margin: 2rem;
+        transform: rotateY(-90deg);
+        opacity: 0;
+        transition: all 0.5s;
+        perspective: 1000px;
+        backface-visibility: hidden;
+
+        @for $i from 1 to 4 {
+            &:nth-child(#{$i}) {
+                transition-delay: #{$i * 0.25}s;
+            }
+        }
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            font-size: 2rem;
+            font-weight: 400;
+            color: $color-black;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            background-size: 100%;
+            // background-color: $color-white;
+            background-image: linear-gradient(to right,rgba($color-white, 0.6), rgba($color-white, 0.4));
+            transition: all 0.4s;
+            display: inline-block;
+            box-shadow: 0.5rem 0.8rem 2rem rgba(0, 0, 0, 0.5);
+        }
+
+        &:hover,
+        &:active {
+            color: $color-black;
+            background-position: 250%;
+            transform: translateX(1rem);
+        }
+    }
+
+    &__checkbox:checked ~ &__nav {
+        transform: translateY(25rem);
+    }
+
+    &__checkbox:checked ~ &__nav &__list &__item {
+           transform: rotateY(0);
+           opacity: 1;
+        }
+
+   
+    &__icon {
+        position: relative;
+        margin-top: 3.25rem;
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 3px;
+            background-color: $color-grey-dark-1;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+
+        &::before {
+            top: -0.8rem;
+        }
+        &::after {
+            top: 0.8rem;
+        }
+    }
+
+    &__button:hover &__icon::before {
+        top: -1rem;
+    }
+
+    &__button:hover &__icon::after {
+        top: 1rem;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
 }
