@@ -2,13 +2,13 @@
     display: block;
     min-height: 60rem;
     overflow: hidden;
-    background-image: linear-gradient(to bottom, rgba($color-blue-light, 0.7), rgba($color-blue-dark, 0.3)), url("../images/ocean.jpg");
+    background-image: linear-gradient(to bottom, rgba($color-blue-light, 0.7), rgba($color-blue-dark, 0.3)), url("https://s3.amazonaws.com/andresportofio/images/ocean.jpg");
     background-size:cover;
 }
 
 .section-work {
     min-height: 100rem;
-    background: linear-gradient(to bottom, rgba($color-blue-dark, 0.7), rgba($color-blue-light, 0.3)), url("../images/work-section__bg--large.png"), url("../images/deepSea.jpg");
+    background: linear-gradient(to bottom, rgba($color-blue-dark, 0.7), rgba($color-blue-light, 0.3)), url("https://s3.amazonaws.com/andresportofio/images/work-section__bg--large.png"), url("https://s3.amazonaws.com/andresportofio/images/deepSea.jpg");
     background-size: cover;
 }
 
